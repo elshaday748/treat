@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="Sweet centre.css">
+    </html>
+          <body>
+            <header>
+              <h1>Sweet centre</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a> </li>
+                    <li><a href="Menu.html">Menu</a> </li>
+                    <li><a href="Gallery.html">Gallery</a>
+                    <li><a href="orders.html">Orders</a> </a></li>
+                    <li><a href="Contact.html">Contact</a> </li>
+                </ul>
+            </nav>
+            </header>   
+    <section id="Home">
+        <h2>Welcome to Sweet Escape</h2>
+        <p> Indulge in our delicious handmade treats, crafed with love and finest ingredients.</p>
+        <p> Your go-to place for delicious desserts and treats!</p>
+    </section>
+    <section id="About">
+        <h2>About Us</h2>
+        <p> We are a family-owned business that has been serving the community for over 20 years. Our mission is to provide our customers with the best quality desserts made with the finest ingredients. We take pride in our work and strive to create a memorable experience for our customers. Come visit us and indulge in our delicious treats!</p>
+    </section>
+    <section class="video">
+        <h2>Watch how we make your cruvings</h2>
+        <video width="1000" height="500" controls>
+            <source src="l.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </section>
+    <section id="menu">
+        <h2>Our best products</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+        <h3>Chocolate Cake</h3>
+            <p>Rich and moist chocolate cake topped with silky chocolate ganache.</p>
+            <img src="IMG_4591.JPG" alt = "Sweet Center" width="200px" height="200px">
+           </div>
+            <div class="menu-item">
+        <h3>Strawberry Cheesecake</h3>
+            <p>Creamy cheesecake with a fresh strawberry topping.</p>
+            <img src="IMG_4598.JPG" alt = "Sweet Center" width="200px" height="200px">
+           </div>
+            <div class="menu-item">
+                <h3>Macarons</h3>
+                    <p>Colorful and delicious French macarons in various flavors.</p>
+                    <img src="IMG_4595.JPG" alt = "Sweet Center" width="200px" height="200px">
+                </div>
+                <div class="menu-item">
+                    <h3> Lotus Cake </h3>
+                    <p>Rich and moist Lotus cake topped with lotus cream ganache.</p>
+                    <img src="IMG_4590.JPG" alt = "Sweet Center" width="200px" height="200px">
+                </div>
+                <div class="menu-item">
+                    <h3>Red Velvet Cake</h3>
+                    <p>Classic red velvet cake with creamy cream cheese frosting.</p>
+                    <img src="IMG_4589.JPG" alt = "Sweet Center" width="200px" height="200px">
+                </div>
+                <div class="menu-item">
+                    <h3>Strawberry Shortcake</h3>
+                    <p>Light and fluffy sponge cake with fresh strawberries and whipped cream.</p>
+                    <img src="IMG_4603.JPG" alt = "Sweet Center" width="200px" height="200px">
+                </div>
+                <div class="menu-item">
+                    <h3>Chocolate Croissant</h3>
+                    <p>Soft and chewy chocolate chip cookies made with premium chocolate chips.</p>
+                    <img src="IMG_0124.JPG" alt = "Sweet Center" width="200px" height="200px">
+                </div>
+                <div class="menu-item">
+                    <h3>Cookies Doughs</h3>
+                    <p>Soft and chewy  cookies made with premium differnt flavors chips.</p>
+                    <img src="IMG_4604.JPG" alt = "Sweet Center" width="200px" height="200px">
+                </div>
+                <div class="menu-item">
+                    <h3>Buleberry Maffin</h3>
+                    <p>Soft and fluffy sponge muffin fileed eith creamy buleberry.</p>
+                    <img src="IMG_4599.JPG" alt = "Sweet Center" width="200px" height="200px">
+                </div>
+                <div class="menu-item">
+                    <h3>Chocolate Browines</h3>
+                    <p>Soft and chewy chocolate chip cookies made with premium chocolate brownies.</p>
+                    <img src="IMG_4600.JPG" alt = "Sweet Center" width="200px" height="200px">
+            </div>
+
+            </section>
+        
+            <section id="login">
+                <h2>If you are already a member with us</h2>
+                <form onsubmit="return validateLogin()">
+                    <h1>Log in</h1>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username"><br>
+            
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password"><br>
+            
+                    <button type="submit">Login</button>
+                </form>
+            </section>
+            
+            <script>
+                function validateLogin() {
+                    let username = document.getElementById("username").value;
+                    let password = document.getElementById("password").value;
+            
+                    if (username === "" || password === "") {
+                        alert("Please enter both username and password.");
+                        return false; // Prevent form submission
+                    }
+            
+                    alert("Login successful!"); // Simulate successful login
+                    return true; // Allow form submission
+                }
+            </script>
+            
+    <footer>
+        <p> 2021 Sweet Treat Restaurant. All rights reserved.</p>
+    </footer>
+          </body>
+</html>
